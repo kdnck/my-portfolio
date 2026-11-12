@@ -1,4 +1,4 @@
-const showMoreBtn = document.querySelector('#showMore');
+п»їconst showMoreBtn = document.querySelector('#showMore');
 
 const moreText = document.querySelector('#moreText');
 
@@ -10,9 +10,9 @@ if (showMoreBtn && moreText) {
 
         showMoreBtn.textContent = moreText.classList.contains('d-none')
  
-            ? 'Подробнее'
+            ? 'РџРѕРґСЂРѕР±РЅРµРµ'
  
-            : 'Скрыть';
+            : 'РЎРєСЂС‹С‚СЊ';
 
     });
 
@@ -24,25 +24,25 @@ const projectsData = [
 
     {
  
-        title: 'Этап 1: Структура и дизайн',
+        title: 'Р­С‚Р°Рї 1: РЎС‚СЂСѓРєС‚СѓСЂР° Рё РґРёР·Р°Р№РЅ',
  
-        tech: 'HTML5, CSS3, адаптивная вёрстка на Bootstrap 5'
- 
-   },
-
-    {
- 
-        title: 'Этап 2: Интерактивность',
- 
-        tech: 'JavaScript: работа с DOM, событиями и формами'
+        tech: 'HTML5, CSS3, Р°РґР°РїС‚РёРІРЅР°СЏ РІС‘СЂСЃС‚РєР° РЅР° Bootstrap 5'
  
    },
 
     {
  
-        title: 'Этап 3: Публикация',
+        title: 'Р­С‚Р°Рї 2: РРЅС‚РµСЂР°РєС‚РёРІРЅРѕСЃС‚СЊ',
  
-        tech: 'Размещение и обновление проекта на GitHub Pages'
+        tech: 'JavaScript: СЂР°Р±РѕС‚Р° СЃ DOM, СЃРѕР±С‹С‚РёСЏРјРё Рё С„РѕСЂРјР°РјРё'
+ 
+   },
+
+    {
+ 
+        title: 'Р­С‚Р°Рї 3: РџСѓР±Р»РёРєР°С†РёСЏ',
+ 
+        tech: 'Р Р°Р·РјРµС‰РµРЅРёРµ Рё РѕР±РЅРѕРІР»РµРЅРёРµ РїСЂРѕРµРєС‚Р° РЅР° GitHub Pages'
  
    }
 
@@ -100,7 +100,7 @@ if (contactForm && formMessage) {
 
         if (!name || !email.includes('@') || !comment) {
 
-            formMessage.textContent = 'Заполните все поля и проверьте корректность email!';
+            formMessage.textContent = 'Р—Р°РїРѕР»РЅРёС‚Рµ РІСЃРµ РїРѕР»СЏ Рё РїСЂРѕРІРµСЂСЊС‚Рµ РєРѕСЂСЂРµРєС‚РЅРѕСЃС‚СЊ email!';
 
             formMessage.className = 'mt-3 mb-0 fw-bold text-danger';
 
@@ -109,7 +109,7 @@ if (contactForm && formMessage) {
         }
 
 
-        formMessage.textContent = `Спасибо, ${name}! Ваше сообщение успешно отправлено.`;
+        formMessage.textContent = `РЎРїР°СЃРёР±Рѕ, ${name}! Р’Р°С€Рµ СЃРѕРѕР±С‰РµРЅРёРµ СѓСЃРїРµС€РЅРѕ РѕС‚РїСЂР°РІР»РµРЅРѕ.`;
 
         formMessage.className = 'mt-3 mb-0 fw-bold text-success';
 
